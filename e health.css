@@ -1,0 +1,540 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 5;
+  }
+  
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .scrolled{
+    background-color: #3333335d;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  h1 {
+    font-size: 1.2em;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .buttons button {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .search-btn img {
+    height: 20px;
+  }
+  
+  #welcome {
+    background-image: url('pictures/welcome-bg.png');
+    background-size: cover;
+    position: relative; /* Ensure the position context for absolute positioning */
+  }
+  
+  #welcome:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;
+    filter: blur(15px); /* Adjust blur amount as needed */
+    z-index: -1; /* Ensure the blur layer is behind the content */
+  }
+  
+ 
+ 
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .welcome-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hospital-logo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  
+  .welcome-text {
+    color: #000000;
+  }
+  
+  .welcome-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+
+  #find-a-doctor {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .doctor-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .doctor {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .doctor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .doctor h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .doctor p {
+    margin-bottom: 5px;
+  }
+  
+  .book-appointment-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+  #about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    margin-top: 20px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .picture-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .picture-row figure {
+    margin: 0 20px;
+  }
+  
+  .picture-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .picture-row figcaption {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+ 
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .picture-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .picture-row figure {
+    margin: 0 20px;
+  }
+  
+  .picture-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .picture-row figcaption {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+
+  #picture-specs{
+    width: 400; /* Adjust image width as needed */
+    height: 300;
+    border-radius: 10px;
+
+  }
+
+  #our-departments {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  #our-departments h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  
+  .department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .department {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .department img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .department h3 {
+    margin-top: 10px;
+  }
+  
+  .department p {
+    margin-top: 10px;
+  }
+  
+
+      .slide {
+        display: inline-block;
+        padding: 0 10px;
+        text-align: center;
+      }
+      
+      .slide img {
+        width: 200px; /* Adjust image width as needed */
+        height: 100px;
+        border-radius: 10px;
+      }
+      
+      .slide p {
+        margin-top: 10px;
+        font-weight: bold;
+        color: #555;
+      }
+
+      .doctors-images{
+        width: 400; /* Adjust image width as needed */
+        height: 300;
+        border-radius: 10px;
+      }
+
+      .footer-infor{
+        text-align: left;
+        padding-left: 3%;
+      }
+
+      #footer{
+        background-color: #555;
+      }
+
+      .about-info{
+        padding: 2%;
+      }
+
+      #ambulance {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        text-align: center;
+      }
+      
+      .ambulance-container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .ambulance-description {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      
+      .ambulance-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      .ambulance-form input {
+        width: 75%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      .request-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .request-btn:hover {
+        background-color: #0056b3;
+      }
+      
+
+      
+.picture-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+    
+footer {
+  background-color: #4b4242;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hospital-info,
+.contact-info,
+.consultation-form,
+.social-media {
+  width: calc(25% - 20px); /* Adjust width as needed */
+}
+
+.hospital-info img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.contact-info h3,
+.consultation-form h3,
+.social-media h3 {
+  margin-bottom: 20px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+  margin-right: 0;
+}
+
+.social-media ul li a {
+  color: #333;
+  font-size: 20px;
+}
+
+.social-media ul li a:hover {
+  color: #007bff;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Form Styling */
+.consultation-form form {
+  width: 100%; /* Adjust width as needed */
+}
+
+.consultation-form input[type="text"],
+.consultation-form input[type="tel"],
+.consultation-form input[type="email"],
+.consultation-form textarea,
+.consultation-form button {
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.consultation-form textarea {
+  height: 100px;
+}
+
+.consultation-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.consultation-form button:hover {
+  background-color: #0056b3;
+}
+
+  

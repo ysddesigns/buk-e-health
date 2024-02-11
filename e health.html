@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University E-health Clinic</title>
+  <link rel="stylesheet" href="e health.css">
+  <style>
+    /* Custom styles */
+    /* Reset default margin and padding */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Align items vertically */
+    }
+
+    .logo {
+      flex: 0 0 auto;
+    }
+
+    .logo img {
+      height: 50px; /* Adjust height as needed */
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header id="mainHeader">
+    <div class="logo">
+      <img src="pictures/logo1.png" alt="Logo">
+    </div>
+    <h1>University E-health Clinic</h1>
+    <nav>
+      <ul>
+        <li><a href="appointment.html">Doctor Appointment</a></li>
+        <li><a href="#ambulance">Request Ambulance</a></li>
+        <li><a href="#our-departments">Departments</a></li>
+        <li><a href="#find-a-doctor">Find a Doctor</a></li>
+        <li><a href="about us.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="buttons">
+      <button class="login-btn" >Login</button>
+      <button class="signup-btn">Sign Up</button>
+      <button class="search-btn"><img src="pictures/searc_icon.png" alt="Search Icon"></button>
+    </div>
+  </header>
+  
+
+  <main>
+    <img src="pictures/1.jpg">
+    <section id="welcome">
+      <div class="container">
+        <div class="welcome-content">
+          <div class="hospital-logo">
+            <img src="pictures/pills.jpg" alt="Hospital Logo">
+          </div>
+          <div class="welcome-text">
+            <h2>Welcome to Our E-Health Hospital</h2>
+            <p>We are dedicated to providing high-quality healthcare services to the university community. With a team of experienced doctors and state-of-the-art facilities, we aim to ensure the well-being and health of every student and staff member.</p>
+            <p>At our hospital, we prioritize your health and safety above all else. Whether you need routine check-ups, urgent care, or specialized treatment, we are here to serve you with compassion and excellence.</p>
+            <p>Our commitment to innovation and continuous improvement drives us to constantly enhance our services and adopt the latest advancements in medical technology.</p>
+            <p>Thank you for choosing our hospital for your healthcare needs. Your health is our priority, and we look forward to serving you with the utmost care and professionalism.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section id="our-departments">
+      <h2>Our Departments</h2>
+      <div class="department-grid">
+        <div class="department">
+          <img src="pictures/bed.jpg" alt="Department 1">
+          <h3>Medical unit</h3>
+          <p>General Out-Patient Consultations, In-Patient Care, Speciality Internal Medicine Clinic,
+             Speciality Surgical Clinic, Speciality Obstetrics and Gynaecology Clinic Speciality 
+             Paediatrics Clinic and Surgical Care.</p>
+        </div>
+        <div class="department">
+          <img src="pictures/drip.jpg" alt="Department 2">
+          <h3>Laboratory unit</h3>
+          <p>Provide Diagnostic Services to University Community; Staff, Staff Dependents, 
+            Staff Children Below 18 years, Undergraduate Students, Postgraduate Students, 
+            Provision of General Laboratory Investigations.</p>
+        </div>
+        <div class="department">
+          <img src="pictures/pills.jpg" alt="Department 3">
+          <h3>Pharmacy</h3>
+          <p>Processing of filing of prescriptions comprising: - Outpatient dispensing, 
+            In-patient dispensing, Patient counseling, and Pharmaceutical care, Quality 
+            Control and Quality assurance;</p>
+        </div>
+        <!-- Add more departments as needed -->
+      </div>
+    </section>
+    
+    
+    
+    <section id="find-a-doctor">
+      <div class="container">
+        <h2>Find a Doctor</h2>
+        <div class="doctor-list">
+          <div class="doctor">
+            <img src="pictures/doctor.jpg" alt="Doctor 1">
+            <h3>Dr. Mubleen MY</h3>
+            <p>Specialty: Cardiology</p>
+            <p>Experience: 10 years</p>
+            <button class="book-appointment-btn">Book Appointment</button>
+          </div>
+          <div class="doctor">
+            <img src="pictures/doctor1.jpg" alt="Doctor 2">
+            <h3>Dr. Yusuff BY</h3>
+            <p>Specialty: Pediatrics</p>
+            <p>Experience: 8 years</p>
+            <button class="book-appointment-btn">Book Appointment</button>
+          </div>
+          <!-- Add more doctors as needed -->
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="ambulance">
+      <div class="ambulance-container">
+        <h2>Request Ambulance</h2>
+        <p class="ambulance-description">In case of emergency, request ambulance services.</p>
+        <form class="ambulance-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+          
+          <label for="location">Location:</label>
+          <input type="text" id="location" name="location" required>
+          
+          <button type="submit" class="request-btn">Request Ambulance</button>
+        </form>
+      </div>
+    </section>
+    
+    <section id="about-us">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>We are dedicated to providing exceptional healthcare services to our university community. Our team of experienced healthcare professionals is committed to ensuring the well-being and safety of our students.</p>
+            <p>At University E-health Clinic, we prioritize timely access to healthcare, compassionate patient care, and continuous improvement in our services.</p>
+          </div>
+          <div class="about-image">
+            <img src="pictures/logo2.png" alt="About Us Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+  </main>
+
+  
+  <footer style="background-color: rgb(34, 34, 34);">
+    <div class="container">
+      <div class="footer-content">
+        <div class="hospital-info">
+          <img src="pictures/logo2.png" alt="Hospital Logo">
+          <p>Welcome to Our Hospital - Providing Quality Healthcare Services</p>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Us</h3>
+          <p>BUK University Hospital Street, BUK New site</p>
+          <p>Phone: +123 456 789</p>
+          <p>Email: info@universityehealth.com</p>
+        </div>
+        <div class="consultation-form">
+          <h3>Get Free Consultation</h3>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="department" placeholder="Department" required>
+            <textarea name="message" placeholder="Describe Your Treatment Requirements" required></textarea>
+            <button type="submit">Free Consultation</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#wa.me/2347068000713"><img src="pictures/WhatsApp-Logo.png" width="25%"  alt="Whatsapp"></a></li>
+            <li><a href="#www.facebook.com/yusuffsmartt"><img src="pictures/Facebook_Logo.png" width="13%"  alt="Facebook"></a></li>
+            <li><a href="#www.twitter.com"><img src="pictures/twitter.png" width="13%" alt="Twitter (X)"></i></a></li>
+            <li><a href="#www,instagram.com"><img src="pictures/Instagram_logo_2016.svg.png" width="13%" alt="Instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 University e-Health All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+ 
+<script src="script.js"></script>
+</body>
+</html>
